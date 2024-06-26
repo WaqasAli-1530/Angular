@@ -3,9 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-std-data',
   template: `
-    <p>
+    <h2 class="custom">
       std-data works!
-    </p>
+    </h2>
   `,
   styleUrl: './std-data.component.css'
 })

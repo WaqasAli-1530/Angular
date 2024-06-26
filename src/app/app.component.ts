@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'blog';
+  color = "red";
+  bgcol = "green"
+
+  getColor()
+  {
+    this.color = "yellow";
+    this.bgcol = "grey";
+  }
 }
