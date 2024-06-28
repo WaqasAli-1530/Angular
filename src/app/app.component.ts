@@ -6,13 +6,14 @@ import {NgForm} from '@angular/forms';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  display = true;
-  toggle(){
-    this.display = !this.display;
+  list:any[]=[];
+  addTask(task:string)
+  {
+    this.list.push({id:this.list.length,data:task});
+     console.log(this.list);
   }
-  hidden = false;
-
-  toggleBadgeVisibility() {
-    this.hidden = !this.hidden;
+  removeItem(id:number)
+  {
+    this.list = this.list.filter(item=>item.id!=id)
   }
 }
