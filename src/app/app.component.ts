@@ -6,14 +6,9 @@ import {NgForm} from '@angular/forms';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  list:any[]=[];
-  addTask(task:string)
-  {
-    this.list.push({id:this.list.length,data:task});
-     console.log(this.list);
-  }
-  removeItem(id:number)
-  {
-    this.list = this.list.filter(item=>item.id!=id)
-  }
+    data=10;
+    updateChild()
+    {
+      this.data = Math.floor(Math.random()*10);
+    }
 }
