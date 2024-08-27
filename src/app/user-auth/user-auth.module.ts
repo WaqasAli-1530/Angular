@@ -14,5 +14,7 @@ import { LoginComponent } from './login/login.component';
   exports:[
     LoginComponent
   ]
+
+  // in testing branch
 })
 export class UserAuthModule { }
